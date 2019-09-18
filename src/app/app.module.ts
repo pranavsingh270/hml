@@ -14,8 +14,12 @@ import { ServicesComponent } from './services/services.component';
 import { TeamComponent } from './team/team.component';
 import { IndustryComponent } from './industry/industry.component';
 import { ContactComponent } from './contact/contact.component';
+<<<<<<< HEAD
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+=======
+import { FlexLayoutModule } from '@angular/flex-layout';
+>>>>>>> 9001284fd523bd25d991317775526c2bfe567e3f
 
 @NgModule({
   declarations: [
@@ -37,8 +41,8 @@ import { FooterComponent } from './footer/footer.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
-
+    MatIconModule,
+    FlexLayoutModule
   ],
   exports:[
     MatToolbarModule,
