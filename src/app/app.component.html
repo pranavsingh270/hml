@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
 </head>
-<nav class="navbar navbar-inverse">
+<!-- <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -43,7 +43,30 @@
       </ul>
     </div>
   </div>
-</nav> 
+</nav>  -->
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button>
+    <h1>SimpleCRM</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/home'"> Accounts </a>
+      <a mat-button [routerLink]="'/services'"> Create Account </a>
+      <a mat-button [routerLink]="'/industry'"> Contacts </a>
+      <a mat-button [routerLink]="'/contact'"> Create Contact </a>
+      <a mat-button [routerLink]="'/team'"> Activities </a>
+      <a mat-button [routerLink]="'/about'"> Create Activity </a>
+
+    </div>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+      <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
+    </mat-toolbar-row>
+</mat-toolbar>
 
 <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" routerLink="/"><img width="100%" src="/assets/logo.jpg"></a>

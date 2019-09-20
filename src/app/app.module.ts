@@ -35,7 +35,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatButtonModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    BrowserAnimationsModule,
+    BrowserAnimationsModule,
   ],
   exports:[
     MatToolbarModule,
