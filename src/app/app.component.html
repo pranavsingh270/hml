@@ -1,7 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<<<<<<< HEAD
+<<<<<<< HEAD
+<!-- <app-header></app-header> -->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <!-- <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    </button> -->
+    <h1><a mat-button [routerLink]="['/home']">LOGO</a></h1>
+=======
 <!-- <mat-toolbar color="primary">
+=======
+ <!-- <mat-toolbar color="primary">
+>>>>>>> 2c2a2067a0f2f50312e3c674e5fd785432b0490b
   <mat-toolbar-row>
     <h1>LOGOsdfasdfsdfasdfaqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqs</h1>
+>>>>>>> 9001284fd523bd25d991317775526c2bfe567e3f
     <span class="menu-spacer"></span>
     <div>
       <a mat-button [routerLink]="['/home']"> Home </a>
@@ -13,15 +27,60 @@
     </div>
   </mat-toolbar-row>
 
-</mat-toolbar> -->
-<head>
+</mat-toolbar>  -->
+  <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
+<<<<<<< HEAD
 </head>
 <!-- <nav class="navbar navbar-inverse">
+=======
+</head> 
+ 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    HML Consultants
+  </a>
+
+  <button class="navbar-toggler" type="button"
+          (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse"
+       [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/home']" (click)="toggleNavbar()">Home</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/services']" (click)="toggleNavbar()">Services</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/industry']" (click)="toggleNavbar()">Industry</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/contact']" (click)="toggleNavbar()">Contact</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/team']" (click)="toggleNavbar()">Team</a>
+      </li>
+
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/about']" (click)="toggleNavbar()">About</a>
+      </li>
+
+    </ul>
+  </div>
+</nav><!-- <nav class="navbar navbar-inverse">
+>>>>>>> 0cab5f0330d1ec070d3c555c2666f4ffd5e26861
   <div class="container-fluid">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -44,6 +103,7 @@
     </div>
   </div>
 </nav>  -->
+<<<<<<< HEAD
 
 <mat-toolbar color="primary">
   <mat-toolbar-row>
@@ -67,6 +127,8 @@
       <span style="font-size: 12px;">SimpleCRM helps you easily manage your contacts</span>
     </mat-toolbar-row>
 </mat-toolbar>
+=======
+>>>>>>> 0cab5f0330d1ec070d3c555c2666f4ffd5e26861
 
 <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" routerLink="/"><img width="100%" src="/assets/logo.jpg"></a>
@@ -89,8 +151,11 @@
     </div>
   </nav> -->
 
+<<<<<<< HEAD
+=======
 <!-- <app-home></app-home> -->
 
+>>>>>>> 9001284fd523bd25d991317775526c2bfe567e3f
 <!-- <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -111,3 +176,4 @@
 </ul> -->
 
 <router-outlet></router-outlet>
+<app-footer></app-footer>
